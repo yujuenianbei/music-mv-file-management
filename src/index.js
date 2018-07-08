@@ -5,15 +5,15 @@ import {Provider} from 'react-redux';
 import Main from './main';
 import registerServiceWorker from './registerServiceWorker';
 
-// import configureStore from './redux/store/index'
+import configureStore from './store'
 
-// const store = configureStore()
+const store = configureStore
 class SiderDemo extends React.Component {
   render() {
     return (
-    //   <Provider store={store}>
+      <Provider store={store}>
         <Main />
-    //   </Provider>
+      </Provider>
     );
   }
 }

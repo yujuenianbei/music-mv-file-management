@@ -1,0 +1,161 @@
+.player{
+    z-index: 999;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 48px;
+    background: #fff;
+}
+.player_img{
+    position: fixed;
+    background: #fff;
+    z-index: 999;
+    width: 100%;
+    height:48px;
+    img{
+        float: left;
+        width: 48px;
+        height: 48px;
+    }
+    .songDetail{
+        width: 100px;
+        float: left;
+        padding: 0px 5px;
+        div{
+            cursor: pointer;
+            font-size: 12px;
+            width: 100%;
+            height: 24px;
+            line-height: 24px;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+        }
+    }
+    .playControll{
+        float: right;
+        position: fixed;
+        right: 30px;
+    }
+    .player_icon{
+        float: left;
+        height: 48px;
+        line-height: 48px;
+        span{
+            cursor: pointer;
+            font-size: 26px;
+            padding: 3px 5px;
+            margin: 5px;
+            border-radius: 50%;
+        }
+        .songTime{
+            font-size: 14px;
+            height: 48px;
+            line-height: 48px;
+            margin: 0;
+            padding: 0;
+            vertical-align: super;
+        }
+        .songList{
+            cursor: pointer;
+            float: right;
+            font-size: 26px;
+            span{
+                font-size: 14px;
+                padding: 0px 4px;
+                margin: 15px 0px;
+                position: absolute;
+                background: #ccc;
+                height: 20px;
+                color: #fff;
+                border-radius: 10px;
+                line-height: 20px;
+            }
+        }
+    }
+    .player_slider{
+        float: left;
+        height: 48px;
+        line-height: 48px;
+        width: calc(~"100% - 700px");
+        .ant-slider{
+            margin-top: 18px;
+        }
+    }
+}
+.songListDetail{
+    transition: bottom .2s linear;
+    display: block;
+    position: fixed;
+    bottom: 52px;
+    right: 4px;
+    width: 450px;
+    height: 300px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 998;
+    .songListDetailTitle{
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+        .songListTitleClose{
+            float: right;
+            cursor: pointer;
+            margin-right: 10px; 
+        }
+    }
+    .songListDetailMenu{
+        height: calc(~"100% - 40px");
+        overflow: auto;
+        li{
+            cursor: default;
+            height: 40px;
+            line-height: 40px;
+            border-bottom: 1px solid #ccc;
+            &:last-child{
+                border-bottom: 0px;
+            }
+            &:hover{
+                transition: all .3s;
+                background:rgb(230, 247, 255) !important;
+            }
+            &:nth-child(odd){
+                background: #fff;
+            }
+            &:nth-child(even){
+                background: rgb(238, 238, 238);
+            }
+            .playNow{
+                width:30px;
+                float: left;
+                text-align: center;
+            }
+            .songName{
+                width: calc(~'60% - 30px');
+                float: left;
+                overflow: hidden;
+                text-overflow:ellipsis;
+                white-space: nowrap;
+            }
+            .songSinger{
+                width: calc(~'30% - 5px');
+                padding-left: 5px;
+                float: left;
+                overflow: hidden;
+                text-overflow:ellipsis;
+                white-space: nowrap;
+            }
+            .songTime{
+                width: 10%;
+                width: calc(~'10% - 5px');
+                padding-left: 5px;
+                float: left;
+                overflow: hidden;
+                text-overflow:ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+}

@@ -4,7 +4,7 @@ import Left from './left';
 import Header from './header';
 import Content from './content';
 import './main.less'
-import Player from './player';
+import PlayerIndex from './play/playerIndex';
 
 
 
@@ -16,7 +16,7 @@ class SiderDemo extends React.Component {
         <Layout>
           <Header style={{ background: '#fff', padding: 0 }} />
           <Content />
-          <Player />
+          <PlayerIndex />
         </Layout>
       </Layout>
     );

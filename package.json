@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "moment": "^2.19.3",
     "antd": "^3.0.0",
     "axios": "^0.17.1",
     "better-scroll": "^1.6.3",
     "less": "^2.7.3",
     "less-loader": "^4.0.5",
+    "lodash": "^4.17.10",
+    "moment": "^2.19.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
@@ -19,7 +20,7 @@
     "redux-thunk": "^2.2.0"
   },
   "scripts": {
-    "server":"node ./server/server.js",
+    "server": "node ./server/server.js",
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-scripts test --env=jsdom",
