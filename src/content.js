@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Main from './layout/main'
+import Main from './layout/musicupload/musicUpload'
 import './main.less'
 class Content extends Component {
     render() {

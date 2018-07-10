@@ -8,9 +8,6 @@ import {
 } from '../action/index'
 
 const initValue = {
-  playState: false,
-  like: true,
-  songListShow: true,
   songId: 1,
   songImg: 'http://p1.music.126.net/BfcRJ5f3Tu988TPBhrhZ6Q==/7916483720778040.jpg',
   songName: 'Trip',
